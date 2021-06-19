@@ -1,0 +1,144 @@
+.btn {
+	@apply inline-flex rounded-md items-center px-4 py-2 text-base leading-6 font-medium border border-transparent;
+
+	&:focus {
+		@apply outline-none ring-2 ring-offset-2;
+	}
+}
+
+@media (min-width: 1024px) {
+	.btn {
+		@apply text-sm leading-5;
+	}
+}
+
+.btn-xs {
+	@apply px-2.5 py-1.5 text-xs leading-4;
+}
+
+.btn-sm {
+	@apply px-3 leading-4;
+}
+
+.btn-lg {
+	@apply text-base leading-6;
+}
+
+.btn-xl {
+	@apply px-6 py-3 text-base leading-6;
+}
+
+.btn-2xl {
+	@apply px-8 py-3 text-base leading-6 rounded-lg;
+}
+
+@media (min-width: 1280px) {
+	.btn-2xl {
+		@apply py-4 text-lg px-10;
+	}
+}
+
+.btn-white {
+	@apply bg-white border border-gray-300 text-gray-700 shadow-sm;
+	
+	&:hover { @apply text-gray-500; }
+	&:focus { @apply text-gray-800 bg-gray-50; }
+}
+
+.btn-green {
+	@apply bg-green-600 text-white shadow-sm;
+
+	&:hover { @apply bg-green-700 text-white; }
+	&:focus { @apply ring-green-500; }
+	&:active { @apply bg-green-700; }
+
+	&.secondary {
+		@apply text-green-700 bg-green-100 shadow-none;
+
+		&:hover { @apply bg-green-200; }
+	}
+}
+
+.btn-blue-gradient {
+	@apply bg-gradient-to-r from-lightblue-600 to-blue-600 text-white shadow-sm;
+
+	&:hover { @apply from-lightblue-700 to-blue-700 text-white; }
+	&:focus { @apply ring-lightblue-500; }
+}
+
+.btn-green-gradient {
+	@apply bg-gradient-to-r from-lightgreen-600 to-green-600 text-white shadow-sm;
+
+	&:hover { @apply from-lightgreen-700 to-green-700 text-white; }
+	&:focus { @apply ring-lightgreen-500; }
+}
+
+.btn-red-gradient {
+	@apply bg-gradient-to-r from-yellow-600 to-red-600 text-white shadow-sm;
+
+	&:hover { @apply from-yellow-700 to-red-700 text-white; }
+	&:focus { @apply ring-yellow-500; }
+}
+
+.btn-dark {
+	@apply bg-gray-900 text-white shadow-sm;
+
+	&:hover { @apply bg-gray-800 text-white; }
+}
+
+.btn-link {
+  @apply text-base leading-6 font-medium text-gray-500 bg-transparent;
+
+  &:hover,
+  &:focus {
+    @apply text-gray-700;
+
+    transform: none;
+  }
+}
+
+.btn-link-red {
+  @apply text-red-700 bg-transparent;
+
+  &:hover,
+  &:focus {
+    @apply text-red-600;
+
+    transform: none;
+  }
+}
+
+.btn-link-lightblue {
+  @apply text-lightblue-700 bg-transparent;
+
+  &:hover,
+  &:focus {
+    @apply text-lightblue-600;
+
+    transform: none;
+  }
+}
+
+.btn-icon {
+	@apply -ml-1 mr-2 h-5 w-5;
+}
+
+.btn-icon-sm {
+	@apply -ml-0.5 mr-2 h-4 w-4;
+}
+
+.btn-icon-lg {
+	@apply -ml-1 mr-3 h-6 w-6;
+}
+
+.btn-icon-end {
+	@apply ml-2 -mr-1 h-5 w-5;
+}
+
+.btn-icon-end-sm {
+	@apply ml-2 -mr-0.5 h-4 w-4;
+}
+
+.btn-icon-end-lg {
+	@apply ml-3 -mr-1 h-5 w-5;
+}
