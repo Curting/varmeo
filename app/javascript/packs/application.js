@@ -8,7 +8,10 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
-import "stylesheets/application"
+// import 'alpine-turbo-drive-adapter'
+// import 'alpinejs'
+
+import "stylesheets/application.scss"
 
 Rails.start()
 Turbolinks.start()
