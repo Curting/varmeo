@@ -4,4 +4,7 @@ class StaticController < ApplicationController
 
   def calculator
   end
+
+  def pricing
+  end
 end

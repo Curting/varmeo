@@ -5,3 +5,11 @@
 .transition-75 {
   transition: ease-in-out 0.075s all;
 }
+
+.bg-red-gradient {
+  @apply bg-gradient-to-r from-yellow-600 to-red-600;
+}
+
+.bg-lightblue-gradient {
+  @apply bg-gradient-to-r from-lightblue-500 to-blue-600;
+}
