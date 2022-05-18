@@ -1,15 +1,15 @@
 <div x-data="{total_value:1000}">
   
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <div class="bg-lightblue-600 border-t border-lightblue-600">
+  <div class="bg-gradient-to-r from-lightblue-600 to-lightblue-700">
     <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
       <div class="text-center">
-        <p class="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Få en god varmeløsning.</p>
-        <p class="max-w-xl mt-5 mx-auto text-xl text-lightblue-100">Vil du kun betale for dit forbrug eller vil du hellere eje din varmepumpe? Uanset hvad, er du sikret den bedste pris.</p>
+        <p class="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Vælg din varmepumpeløsning</p>
+        <p class="max-w-xl mt-5 mx-auto text-xl text-lightblue-100">Halvér din varmeregning. Vælg om du vil eje eller leje din varmepumpe. Uanset hvad, er du sikret den bedste løsning.</p>
       </div>
 
       <!-- This example requires Tailwind CSS v2.0+ -->
-      <div class="max-w-xl bg-lightblue-700 sm:rounded-lg mt-12 text-center mx-auto text-white">
+<!--       <div class="max-w-xl bg-lightblue-700 sm:rounded-lg mt-12 text-center mx-auto text-white">
         <div class="px-4 py-5 sm:p-6">
           <h3 class="text-lg leading-6 font-medium">
             Hvad er dit årlige kWh forbrug?
@@ -28,7 +28,7 @@
 
           </div>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </div>
@@ -38,13 +38,13 @@
   <section class="relative bg-gray-50" aria-labelledby="pricing-heading">
     <h2 id="pricing-heading" class="sr-only">Priser</h2>
     <!-- Tiers -->
-    <div class="max-w-2xl mx-auto px-4 space-y-12 sm:px-6 lg:max-w-7xl lg:space-y-0 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
-      <div class="absolute inset-0 h-2/3 bg-lightblue-600"></div>
+    <div class="max-w-2xl mx-auto px-4 space-y-12 sm:px-6 lg:max-w-7xl lg:space-y-0 lg:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
+      <div class="absolute inset-0 h-2/3 bg-gradient-to-r from-lightblue-600 to-lightblue-700"></div>
       <div class="relative p-8 bg-white border border-lightblue-600 rounded-2xl shadow-sm flex flex-col">
         <div class="flex-1">
-          <h3 class="text-xl font-semibold text-gray-900">Varmepumpe</h3>
+          <h3 class="text-xl font-semibold text-gray-900">Køb af varmepumpe</h3>
           <p class="mt-4 flex items-baseline text-gray-900">
-            <h3 class="text-lightblue-600 text-sm font-semibold uppercase tracking-wide">OPSTART</h3>
+            <h3 class="text-lightblue-600 text-sm font-semibold uppercase tracking-wide">Kontant</h3>
             <div class="flex items-center">
               <p class="text-lightblue-600 text-4xl font-extrabold tracking-tight">110.000</p>
               <div class="ml-4">
@@ -55,14 +55,14 @@
           </p>
 
           <p class="mt-4 flex items-baseline text-gray-900">
-            <h3 class="text-lightblue-600 text-sm font-semibold uppercase tracking-wide">LØBENDE</h3>
+            <h3 class="text-lightblue-600 text-sm font-semibold uppercase tracking-wide">Løbende</h3>
             <div class="flex items-center">
               <p class="text-lightblue-600 text-4xl font-extrabold tracking-tight">-</p>
               <div class="ml-4">
               </div>
             </div>
           </p>
-          <p class="mt-6 text-gray-500">The essentials to provide your best work for clients.</p>
+          <p class="mt-6 text-gray-500 font-semibold">Til dig, der gerne vil eje din varmepumpe.</p>
 
           <!-- Feature list -->
           <ul role="list" class="mt-6 space-y-4">
@@ -71,7 +71,7 @@
               <svg class="flex-shrink-0 w-6 h-6 text-lightblue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
-              <span class="ml-3 text-gray-500">5 products</span>
+              <span class="ml-3 text-gray-500">Markedsledende varmepumpe tilpasset nordisk klima</span>
             </li>
 
             <li class="flex">
@@ -79,7 +79,7 @@
               <svg class="flex-shrink-0 w-6 h-6 text-lightblue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
-              <span class="ml-3 text-gray-500">Up to 1,000 subscribers</span>
+              <span class="ml-3 text-gray-500">Betal kontant eller stå selv for finansieringen</span>
             </li>
 
             <li class="flex">
@@ -87,7 +87,7 @@
               <svg class="flex-shrink-0 w-6 h-6 text-lightblue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
-              <span class="ml-3 text-gray-500">Basic analytics</span>
+              <span class="ml-3 text-gray-500">Få en forrentning af dine penge på 7–10%</span>
             </li>
 
             <li class="flex">
@@ -95,8 +95,9 @@
               <svg class="flex-shrink-0 w-6 h-6 text-lightblue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
-              <span class="ml-3 text-gray-500">48-hour support response time</span>
+              <span class="ml-3 text-gray-500">Stå selv for service og reparation</span>
             </li>
+
           </ul>
         </div>
 
@@ -105,11 +106,11 @@
 
       <div class="relative p-8 bg-white border border-lightblue-600 rounded-2xl shadow-sm flex flex-col">
         <div class="flex-1">
-          <h3 class="text-xl font-semibold text-gray-900">Betal kun for dit forbrug</h3>
+          <h3 class="text-xl font-semibold text-gray-900">Varmepumpe på abonnement</h3>
 
           <p class="absolute top-0 py-1.5 px-4 bg-red-gradient rounded-full text-xs font-semibold uppercase tracking-wide text-white transform -translate-y-1/2">Mest populære</p>
           <p class="mt-4 flex items-baseline text-gray-900">
-            <h3 class="text-lightblue-600 text-sm font-semibold uppercase tracking-wide">OPSTART</h3>
+            <h3 class="text-lightblue-600 text-sm font-semibold uppercase tracking-wide">Kontant</h3>
             <div class="flex items-center">
               <p class="text-lightblue-600 text-4xl font-extrabold tracking-tight">0</p>
               <div class="ml-4">
@@ -121,17 +122,27 @@
           <p class="mt-4 flex items-baseline text-gray-900">
             <h3 class="text-lightblue-600 text-sm font-semibold uppercase tracking-wide">LØBENDE</h3>
             <div class="flex items-center">
-              <p id="price" x-text="total_value < 1197 ? 349 : Math.ceil(total_value * 3.5 / 12)" class="text-lightblue-600 text-4xl font-extrabold tracking-tight">292</p>
+              <!-- <p id="price" x-text="total_value < 1197 ? 349 : Math.ceil(total_value * 3.5 / 12)" class="text-lightblue-600 text-4xl font-extrabold tracking-tight">349</p> -->
+              <p id="price" class="text-lightblue-600 text-4xl font-extrabold tracking-tight">970</p>
               <div class="ml-4">
                 <p class="text-gray-700 text-sm">kr. / md</p>
-                <p class="text-gray-500 text-sm"><span x-text="total_value">1000</span> kWh / år</p>
+                <!-- <p class="text-gray-500 text-sm"><span x-text="total_value">1000</span> kWh / år</p> -->
+                <p class="text-gray-500 text-sm">Frapris (afhængig af pumpestørrelse)</p>
               </div>
             </div>
           </p>
-          <p class="mt-6 text-gray-500">Til dig, der vil have at varmen altid fungerer. Slip for investeringen og risici.</p>
+          <p class="mt-6 text-gray-500 font-semibold">Til dig, der gerne vil have en pålidelig varmeløsning nemt og billigt.</p>
 
           <!-- Feature list -->
           <ul role="list" class="mt-6 space-y-4">
+            <li class="flex">
+              <!-- Heroicon name: outline/check -->
+              <svg class="flex-shrink-0 w-6 h-6 text-lightblue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-3 text-gray-500">Markedsledende varmepumpe tilpasset nordisk klima</span>
+            </li>
+
             <li class="flex">
               <!-- Heroicon name: outline/check -->
               <svg class="flex-shrink-0 w-6 h-6 text-lightblue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -153,94 +164,15 @@
               <svg class="flex-shrink-0 w-6 h-6 text-lightblue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
-              <span class="ml-3 text-gray-500">Fast pris pr. kWh (3,5 kr.)</span>
+              <span class="ml-3 text-gray-500">Service og driftsoptimering inkluderet</span>
             </li>
 
-            <li class="flex">
-              <!-- Heroicon name: outline/check -->
-              <svg class="flex-shrink-0 w-6 h-6 text-lightblue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              <span class="ml-3 text-gray-500">Service og driftsoptimering</span>
-            </li>
-
-            <li class="flex">
-              <!-- Heroicon name: outline/check -->
-              <svg class="flex-shrink-0 w-6 h-6 text-lightblue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              <span class="ml-3 text-gray-500">Gratis support alle ugens dage</span>
-            </li>
           </ul>
         </div>
 
         <a href="#" class="btn btn-xl btn-red-gradient w-full block text-center sm:mt-6">Få et gratis tilbud</a>
       </div>
 
-      <div class="relative p-8 bg-white border border-lightblue-600 rounded-2xl shadow-sm flex flex-col">
-        <div class="flex-1">
-          <h3 class="text-xl font-semibold text-gray-900">Varmepumpe + Service</h3>
-          <p class="mt-4 flex items-baseline text-gray-900">
-            <h3 class="text-lightblue-600 text-sm font-semibold uppercase tracking-wide">OPSTART</h3>
-            <div class="flex items-center">
-              <p class="text-lightblue-600 text-4xl font-extrabold tracking-tight">110.000</p>
-              <div class="ml-4">
-                <p class="text-gray-700 text-sm">kr.</p>
-                <p class="text-gray-500 text-sm">Frapris</p>
-              </div>
-            </div>
-          </p>
-
-          <p class="mt-4 flex items-baseline text-gray-900">
-            <h3 class="text-lightblue-600 text-sm font-semibold uppercase tracking-wide">LØBENDE</h3>
-            <div class="flex items-center">
-              <p class="text-lightblue-600 text-4xl font-extrabold tracking-tight">275</p>
-              <div class="ml-4">
-                <p class="text-gray-700 text-sm">kr. / md</p>
-                <p class="text-gray-500 text-sm">Frapris</p>
-              </div>
-            </div>
-          </p>
-          <p class="mt-6 text-gray-500">Dedicated support and infrastructure for your company.</p>
-
-          <!-- Feature list -->
-          <ul role="list" class="mt-6 space-y-4">
-            <li class="flex">
-              <!-- Heroicon name: outline/check -->
-              <svg class="flex-shrink-0 w-6 h-6 text-lightblue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              <span class="ml-3 text-gray-500">Unlimited products</span>
-            </li>
-
-            <li class="flex">
-              <!-- Heroicon name: outline/check -->
-              <svg class="flex-shrink-0 w-6 h-6 text-lightblue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              <span class="ml-3 text-gray-500">Unlimited subscribers</span>
-            </li>
-
-            <li class="flex">
-              <!-- Heroicon name: outline/check -->
-              <svg class="flex-shrink-0 w-6 h-6 text-lightblue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              <span class="ml-3 text-gray-500">Advanced analytics</span>
-            </li>
-
-            <li class="flex">
-              <!-- Heroicon name: outline/check -->
-              <svg class="flex-shrink-0 w-6 h-6 text-lightblue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              <span class="ml-3 text-gray-500">1-hour, dedicated support response time</span>
-            </li>
-          </ul>
-        </div>
-
-        <a href="#" class="bg-lightblue-50 text-lightblue-700 hover:bg-lightblue-100 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium">Få et gratis tilbud</a>
-      </div>
     </div>
   </section>
 
@@ -248,3 +180,5 @@
 
 
 <%= render 'static/pricing/feature_comparison' %>
+
+<%= render "static/index/logo_cloud_section" %>
