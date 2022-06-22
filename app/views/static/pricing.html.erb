@@ -4,7 +4,7 @@
   <div class="bg-gradient-to-r from-lightblue-600 to-lightblue-700">
     <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
       <div class="text-center">
-        <p class="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Varmepumpe - Luft-til-luft</p>
+        <p class="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Varmepumpe - Luft-til-vand</p>
         <p class="max-w-xl mt-5 mx-auto text-xl text-lightblue-100">Halvér din varmeregning. Vælg om du vil eje eller leje din varmepumpe. Uanset hvad, er du sikret den bedste løsning.</p>
       </div>
 
@@ -80,14 +80,6 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
               <span class="ml-3 text-gray-500">Betal kontant eller stå selv for finansieringen</span>
-            </li>
-
-            <li class="flex">
-              <!-- Heroicon name: outline/check -->
-              <svg class="flex-shrink-0 w-6 h-6 text-lightblue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              <span class="ml-3 text-gray-500">Få en forrentning af dine penge på 7–10%</span>
             </li>
 
             <li class="flex">
@@ -173,7 +165,7 @@
               <svg class="flex-shrink-0 w-6 h-6 text-lightblue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
-              <span class="ml-3 text-gray-500">All-risk forsikring</span>
+              <span class="ml-3 text-gray-500">Mulighed for at købe varmepumpen senere til restværdi</span>
             </li>
 
             <li class="flex">
@@ -198,5 +190,8 @@
 
 
 <%= render 'static/pricing/feature_comparison' %>
+<div class="sm:bg-gray-50 -mt-12">
+  <%= render "static/shared/kinnan_map" %>
+</div>
 
 <%= render "static/index/logo_cloud_section" %>
