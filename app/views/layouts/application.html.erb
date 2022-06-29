@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Varmepumper på abonnement - Varmeo</title>
+    <title><%= meta_title %> - Varmeo</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="canonical" href="https://www.varmeo.dk" />
     <%= favicon_link_tag asset_path('favicon/favicon-32x32.png') %>
     
     <%= csrf_meta_tags %>
@@ -12,12 +13,29 @@
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+    <% if Rails.env.production? %>
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TNRP4KF');</script>
+      <!-- End Google Tag Manager -->
+    <% end %>
+
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
 
   </head>
 
   <body>
+    <% if Rails.env.production? %>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNRP4KF"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    <% end %>
+
     <div class="min-h-screen bg-white">
       <%= render "shared/nav" %>
       <main>
