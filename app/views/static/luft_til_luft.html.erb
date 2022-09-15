@@ -53,7 +53,7 @@
     <div class="mx-auto max-w-2xl px-4 pt-10 pb-16 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pt-16 lg:pb-24">
       <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
         <span class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-0.5 text-sm font-medium text-emerald-800">⭐️ Kampagnetilbud</span>
-        <span class="inline-flex items-center rounded-full bg-red-100 px-3 py-0.5 text-sm font-medium text-red-800">🚚 Strakslevering</span>
+        <span class="inline-flex items-center rounded-full bg-red-100 px-3 py-0.5 text-sm font-medium text-red-800 mt-2 sm:mt-0">🚚 Strakslevering</span>
         <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl mt-3">HERO - Luft-til-luft varmepumpe</h1>
         <p class="text-lg font-medium text-gray-500 mt-2">Effektivt varme- og kølesystem i ét fra Mitsubishi</p>
       </div>
@@ -83,7 +83,7 @@
                 <!-- Heroicon name: mini/check-circle -->
                 <%= render_svg "icons/check-solid",
                                 styles: "mr-1.5 h-6 w-6 text-emerald-600" %>
-                Nem og fair at opsige eller frikøbe
+                Nem at opsige eller frikøbe
               </p>
 
               <p class="text-3xl tracking-tight text-gray-900 mt-6">410 kr. <span class="text-xl text-gray-500">pr. måned</span></p>
@@ -111,7 +111,7 @@
               </div>
             </div>
 
-            <form class="mt-10">
+            <form class="mt-8">
               <!-- Colors -->
               <div>
                 <h3 class="text-sm font-medium text-gray-900">Farver</h3>
@@ -159,6 +159,32 @@
               </div>
             </form>
             <button data-tf-slider="UJpHsVXm" data-tf-width="550" data-tf-iframe-props="title=Hero - Bestillingsformular" data-tf-medium="snippet" class="mt-10 btn btn-xl bg-emerald-600 hover:bg-emerald-700 text-white w-full justify-center">Gå til bestilling</button>
+
+            <div class="mt-8">
+              <div class="relative">
+                <div class="absolute inset-0 flex items-center">
+                  <div class="w-full border-t border-gray-300"></div>
+                </div>
+                <div class="relative flex justify-center text-sm">
+                  <span class="bg-white px-2 text-gray-500">Eller få vejledning på</span>
+                </div>
+              </div>
+              <div class="mt-3 text-center text-base text-gray-400">
+                <%= phone_to "70230250",
+                            class: "btn btn-link font-normal" do %>
+                  <%= render_svg "icons/phone-solid",
+                                  styles: "btn-icon" %>
+                  70 230 250
+                <% end %>
+
+                <%= mail_to "info@varmeo.dk",
+                            class: "btn btn-link font-normal" do %>
+                  <%= render_svg "icons/mail-solid",
+                                  styles: "btn-icon" %>
+                  info@varmeo.dk
+                <% end %>
+              </div>
+            </div>
           </div>
         </div>
       <div class="py-10 lg:col-span-2 lg:col-start-1 lg:border-r lg:border-gray-200 lg:pt-6 lg:pb-16 lg:pr-8">
@@ -169,9 +195,9 @@
           <div class="space-y-6">
             <p class="text-base text-gray-900">Mitsubishi har nyudviklet HERO og overgået hidtidige standarder. Hvor man tidligere var tilfreds med en effekt på 3 eller 4, er du nu helt oppe på at <strong>få 5 gange så meget energi</strong> ud af din HERO i forhold til det, du hælder i (SCOP 5,2). Det giver dig naturligvis en fremragende økonomi. Og så er det den mest driftsikre og støjsvage varmepumpe Mitsubishi nogensinde har udviklet.</p>
 
-            <p class="text-base text-gray-900"><strong>Opvarmer du med gas, olie eller træpiller i dag?</strong> Så er denne varmepumpe idéel til dig som supplerende varmekilde. I disse tider med stadigt stigende priser på fossile brændstoffer, kan du spare helt op til 50-70% på dit varmeforbrug ved at supplere med HERO. Gør dig selv en tjeneste — udskyd fyringssæsonen, reducer dit varmeforbrug og få flere penge på kontoen allerede fra om 14 dage med vores hurtige levering i hele Danmark.</p>
+            <p class="text-base text-gray-900"><strong>Opvarmer du med gas, olie eller træpiller i dag?</strong> Så er denne varmepumpe idéel til dig som supplerende varmekilde. I disse tider med stadigt stigende priser på fossile brændstoffer, kan du spare helt op til 50 på dit varmeforbrug ved at supplere med HERO. Gør dig selv en tjeneste — udskyd fyringssæsonen, reducer dit varmeforbrug og få flere penge på kontoen allerede fra om 14 dage med vores hurtige levering i hele Danmark.</p>
 
-            <p class="text-base text-gray-900">Se eksemplet på hvordan <a href="#eksempel" class="font-medium text-gray-700 underline hover:no-underline">en gennemsnitsfamilie kan spare 1.340 kr. om måneden</a> med en varmepumpe. Og det er endda efter alle udgifter til varmepumpen er betalt!</p>
+            <p class="text-base text-gray-900">Se eksemplet på hvordan <a href="#eksempel" class="font-medium text-gray-700 underline hover:no-underline">en gennemsnitsfamilie kan spare 1.280 kr. om måneden</a> med en varmepumpe. Og det er endda efter alle udgifter til varmepumpen er betalt!</p>
           </div>
         </div>
 
@@ -215,10 +241,10 @@
                       class: "mt-10 rounded" %>
 
         <div class="mt-10">
-          <h2 class="text-xl font-medium text-gray-900" id="eksempel">Spar 16.080 kr. om året på din varmeregning</h2>
+          <h2 class="text-xl font-medium text-gray-900" id="eksempel">Spar 14.580 kr. om året på din varmeregning</h2>
 
           <div class="mt-4 space-y-6">
-            <p class="text-sm text-gray-600">Hvis du har gas-, olie eller pillefyr, har du store besparelser at hente med en varmepumpe som supplerende varmekilde. I eksemplerne nedenfor, har vi taget udgangspunkt i en gennemsnitsfamilie. Når de overgår fra gasfyr til et varmesplit på 25% gasfyr og 75% varmepumpe, opnår de en besparelse på hele 16.080 kr. om året, svarende til 60%. Det er 1.340 kr. ekstra om måneden, du kan bruge på noget sjovere. Og det er endda efter udgifterne til dit abonnement af varmepumpen er betalt!</p>
+            <p class="text-sm text-gray-600">Hvis du har gas-, olie eller pillefyr, har du store besparelser at hente med en varmepumpe som supplerende varmekilde. I eksemplerne nedenfor, har vi taget udgangspunkt i en gennemsnitsfamilie. Når de overgår fra gasfyr til et varmesplit på 25% gasfyr og 75% varmepumpe, opnår de en besparelse på hele 14.580 kr. om året. Det er 1.215 kr. ekstra om måneden, du kan bruge på noget sjovere. Og det er endda efter udgifterne til dit abonnement af varmepumpen er betalt!</p>
           </div>
         </div>
 
@@ -278,11 +304,11 @@
               </div>
               <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt class="text-sm font-medium text-gray-500">Varmeforbrug (varmepumpe)</dt>
-                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">12.000 kWh / 4 SCOP = 3.000 kWh * 3 kr./kWh => 9.000 kr./årligt</dd>
+                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">12.000 kWh / 4 SCOP = 3.000 kWh * 3,5 kr./kWh => 10.500 kr./årligt</dd>
               </div>
               <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt class="text-sm font-medium text-gray-500">Samlet varmeforbrug (kr.)</dt>
-                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">10.000 kr. (gas) + 9.000 kr. (varmepumpe) => 19.000 kr./årligt</dd>
+                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">10.000 kr. (gas) + 10.500 kr. (varmepumpe) => 20.500 kr./årligt</dd>
               </div>
               <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt class="text-sm font-medium text-gray-500">Abonnement på varmepumpe</dt>
@@ -290,11 +316,11 @@
               </div>
               <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt class="text-sm font-medium text-gray-500">Varmeforbrug + abonnement</dt>
-                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">19.000 kr. varmeforbrug + 4.920 kr. abonnement => 23.920 kr./årligt</dd>
+                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">20.500 kr. varmeforbrug + 4.920 kr. abonnement => 25.420 kr./årligt</dd>
               </div>
               <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt class="text-sm font-medium text-gray-500">Din besparelse</dt>
-                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">40.000 kr. (fra forrige eksempel) - 23.920 kr. => <strong>16.080 kr./årligt</strong></dd>
+                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">40.000 kr. (fra forrige eksempel) - 25.420 kr. => <strong>14.580 kr./årligt</strong></dd>
               </div>
             </dl>
           </div>
@@ -305,7 +331,7 @@
           <div class="mx-auto mt-16 max-w-7xl px-4 text-center sm:px-6 lg:mt-20 lg:px-8">
             <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
               <span class="block font-bold">Få varmepumpe på abonnement</span>
-              <span class="block text-2xl mt-3 text-gray-600">Spar op til 70% på din varmeregning allerede fra 1. måned</span>
+              <span class="block text-2xl mt-3 text-gray-600">Spar op til 50% på din varmeregning allerede fra 1. måned</span>
             </h2>
             <div class="mt-8 flex justify-center">
               <div class="inline-flex rounded-md shadow">
