@@ -1,0 +1,45 @@
+<!-- Hero card -->
+<div class="relative">
+  <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
+  <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+    <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
+      <div class="absolute inset-0">
+        <%= image_tag "livingroom-hero.jpg",
+                      class: "h-full w-full object-cover" %>
+        <div class="absolute inset-0 bg-gradient-to-r from-sky-600 to-sky-700 mix-blend-multiply"></div>
+      </div>
+      <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+        <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+          <span class="block text-white">Varmepumpe på abonnement</span>
+          <span class="block text-sky-200 mt-3">nemt og investeringsfrit</span>
+        </h1>
+        <p class="mt-6 max-w-lg mx-auto text-center text-xl text-sky-100 sm:max-w-3xl">
+          Få alle fordelene ved grøn og billig varme for et fast beløb om måneden. Vi indkøber dit varmeanlæg, installerer det i din bolig og <span class="svg-underline">sørger for alt.</span>
+        </p>
+        <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+          <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
+            <%= mail_to "info@varmeo.dk", "Kontakt os",
+                        class: "flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-sky-700 bg-white hover:bg-sky-50 sm:px-8" %>
+            <a href="#feature-section" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-sky-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">
+              Udforsk konceptet
+            </a>
+          </div>
+        </div>
+
+        <p class="text-red-600">Testing!</p>
+
+        <div class="flex justify-center mt-6 hidden">
+          <div class="inline-flex items-center divide-x divide-sky-300">
+            <div class="flex-shrink-0 flex pr-5">
+              <% 5.times do %>
+                <%= render_svg "icons/star-solid", 
+                                styles: "h-5 w-5 text-yellow-400" %>
+              <% end %>
+            </div>
+            <div class="min-w-0 flex-1 pl-5 py-1 text-sm text-white sm:py-3"><span class="font-medium text-sky-100">Anmeldt 4.8 stjerner</span> af over <span class="font-medium text-white">5 perifære venner</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

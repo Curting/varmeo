@@ -1,6 +1,8 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 
 module.exports = {
+  mode: 'jit',
   content: [
     './public/*.html',
     './app/helpers/**/*.rb',
@@ -12,6 +14,11 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ['responsive', 'even', 'hover', 'focus', 'group-hover'],
     },
   },
   plugins: [

@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  scope controller: :static do
+    get :index
+    get :luft_til_vand, path: "luft-til-vand"
+    get :luft_til_luft, path: "luft-til-luft"
+    get :hero_luft_til_luft, path: "hero"
+  end
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  root 'static#index'
 end

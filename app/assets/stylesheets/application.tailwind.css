@@ -2,12 +2,209 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
 
 @layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
-  }
-}
 
-*/
+  /* BUTTONS */
+
+  .btn {
+    @apply inline-flex rounded-md items-center px-4 py-2 text-base leading-6 font-medium border border-transparent;
+  }
+
+  .btn:focus {
+    @apply outline-none ring-2 ring-offset-2;
+  }
+
+  @media (min-width: 1024px) {
+    .btn {
+      @apply text-sm leading-5;
+    }
+  }
+
+  .btn-xs {
+    @apply px-2.5 py-1.5 text-xs leading-4;
+  }
+
+  .btn-sm {
+    @apply px-3 leading-4;
+  }
+
+  .btn-lg {
+    @apply text-base leading-6;
+  }
+
+  .btn-xl {
+    @apply px-6 py-3 text-base leading-6;
+  }
+
+  .btn-2xl {
+    @apply px-8 py-3 text-base leading-6 rounded-lg;
+  }
+
+  @media (min-width: 1280px) {
+    .btn-2xl {
+      @apply py-4 text-lg px-10;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .btn-2xl {
+      @apply py-4 text-lg px-10;
+    }
+  }
+
+  .btn-white {
+    @apply bg-white border border-gray-300 text-gray-700 shadow-sm;
+  }
+
+  .btn-white:hover {
+    @apply text-gray-500;
+  }
+
+  .btn-white:focus {
+    @apply text-gray-800 bg-gray-50;
+  }
+
+  .btn-blue-gradient {
+    @apply bg-gradient-to-r from-sky-600 to-blue-600 text-white shadow-sm;
+  }
+
+  .btn-blue-gradient:hover {
+    @apply from-sky-700 to-blue-700 text-white;
+  }
+
+  .btn-blue-gradient:focus {
+    @apply ring-sky-500;
+  }
+
+  .btn-green-gradient {
+    @apply bg-gradient-to-r from-emerald-600 to-green-600 text-white shadow-sm;
+  }
+
+  .btn-green-gradient:hover {
+    @apply from-emerald-700 to-green-700 text-white;
+  }
+
+  .btn-green-gradient:focus {
+    @apply ring-emerald-500;
+  }
+
+  .btn-red-gradient {
+    @apply bg-gradient-to-r from-amber-600 to-red-600 text-white shadow-sm;
+  }
+
+  .btn-red-gradient:hover {
+    @apply from-amber-700 to-red-700 text-white;
+  }
+
+  .btn-red-gradient:focus {
+    @apply ring-amber-500;
+  }
+
+  .btn-dark {
+    @apply bg-gray-900 text-white shadow-sm;
+  }
+
+  .btn-dark:hover {
+    @apply bg-gray-800 text-white;
+  }
+
+  .btn-link {
+    @apply text-base leading-6 font-medium text-gray-500 bg-transparent;
+  }
+
+  .btn-link:hover, .btn-link:focus {
+    @apply text-gray-700;
+
+    transform: none;
+  }
+
+  .btn-link-red {
+    @apply text-red-700 bg-transparent;
+  }
+
+  .btn-link-red:hover, .btn-link-red:focus {
+    @apply text-red-600;
+
+    transform: none;
+  }
+
+  .btn-link-sky {
+    @apply text-sky-700 bg-transparent;
+  }
+
+  .btn-link-sky:hover, .btn-link-sky:focus {
+    @apply text-sky-600;
+
+    transform: none;
+  }
+
+  .btn-icon {
+    @apply -ml-1 mr-2 h-5 w-5;
+  }
+
+  .btn-icon-sm {
+    @apply -ml-0.5 mr-2 h-4 w-4;
+  }
+
+  .btn-icon-lg {
+    @apply -ml-1 mr-3 h-6 w-6;
+  }
+
+  .btn-icon-end {
+    @apply ml-2 -mr-1 h-5 w-5;
+  }
+
+  .btn-icon-end-sm {
+    @apply ml-2 -mr-0.5 h-4 w-4;
+  }
+
+  .btn-icon-end-lg {
+    @apply ml-3;
+  }
+
+  /* CUSTOM */
+
+  .transition-150 {
+    transition: ease-in-out 0.150s all;
+  }
+
+  .transition-75 {
+    transition: ease-in-out 0.075s all;
+  }
+
+  .bg-red-gradient {
+    @apply bg-gradient-to-r from-amber-600 to-red-600;
+  }
+
+  .bg-sky-gradient {
+    @apply bg-gradient-to-r from-sky-500 to-blue-600;
+  }
+
+  /*
+  .svg-underline {
+    position: relative;
+  }
+  
+  .svg-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -0.600rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    height: 0.75rem;
+
+    // The SVG is added as an SVG background image
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg');
+    background-repeat: no-repeat;
+
+    // This allows the SVG to flex in size to fit
+    // any length of word. If the word is short,
+    // the SVG will be stretched vertically, if it
+    // is long, the SVG will be stretched horizontally.
+    // The jagged nature of this particular SVG works
+    // with this transforming.
+    background-size: cover;
+  }
+  */
+}

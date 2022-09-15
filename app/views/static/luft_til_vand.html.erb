@@ -1,0 +1,201 @@
+<% content_for :meta_title, "Varmepumpe luft-til-vand" %>
+
+<div x-data="{total_value:1000}">
+  
+  <!-- This example requires Tailwind CSS v2.0+ -->
+  <div class="bg-gradient-to-r from-sky-600 to-sky-700">
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <p class="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Varmepumpe - Luft-til-vand</p>
+        <p class="max-w-xl mt-5 mx-auto text-xl text-sky-100">Halvér din varmeregning. Sammenlign nemt om det giver bedst mening for dig at købe eller få varmepumpen på abonnement.</p>
+      </div>
+
+      <!-- This example requires Tailwind CSS v2.0+ -->
+<!--       <div class="max-w-xl bg-sky-700 sm:rounded-lg mt-12 text-center mx-auto text-white">
+        <div class="px-4 py-5 sm:p-6">
+          <h3 class="text-lg leading-6 font-medium">
+            Hvad er dit årlige kWh forbrug?
+          </h3>
+          <div class="mt-2 max-w-xl text-sm">
+            <p>
+              Indtast dit forbrug og beregn nemt din pris på vores løsning.
+            </p>
+
+            <%# range_field :thing1, :in => 0..100, :step => '.1' %>
+
+            <div class="max-w-screen-xl mx-auto mt-6">
+              <input id="range" class="form-input-styling text-lg text-sky-900 text-center w-1/4 mx-auto" type="input" x-model="total_value" />
+              <input class="w-full mt-3" type="range" x-model="total_value" min="0" max="10000" step="100">
+            </div>
+
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+
+
+  <!-- Pricing Section -->
+  <section class="relative bg-gray-50" aria-labelledby="pricing-heading">
+    <h2 id="pricing-heading" class="sr-only">Priser</h2>
+    <!-- Tiers -->
+    <div class="max-w-2xl mx-auto px-4 space-y-12 -mt-12 lg:mt-0 sm:px-6 lg:max-w-7xl lg:space-y-0 lg:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
+      <div class="absolute inset-0 h-2/3 bg-gradient-to-r from-sky-600 to-sky-700"></div>
+      <div class="relative p-8 bg-white border border-sky-600 rounded-2xl shadow-sm flex flex-col overflow-hidden">
+        <span class="absolute top-0 right-0 text-gray-200 text-5xl font-semibold opacity-50 transform rotate-12 mt-10 mr-3">EKSEMPEL</span>
+        <div class="flex-1 z-10">
+          <h3 class="text-xl font-semibold text-gray-900">Køb af varmepumpe</h3>
+          <p class="mt-4 flex items-baseline text-gray-900">
+            <h3 class="text-sky-600 text-sm font-semibold uppercase tracking-wide">Kontant</h3>
+            <div class="flex items-center">
+              <p class="text-sky-600 text-4xl font-extrabold tracking-tight">140.000</p>
+              <div class="ml-4">
+                <p class="text-gray-700 text-sm">kr.</p>
+                <p class="text-gray-500 text-sm">Frapris</p>
+              </div>
+            </div>
+          </p>
+
+          <p class="mt-4 flex items-baseline text-gray-900">
+            <h3 class="text-sky-600 text-sm font-semibold uppercase tracking-wide">Løbende</h3>
+            <div class="flex items-center">
+              <p class="text-sky-600 text-4xl font-extrabold tracking-tight">-</p>
+              <div class="ml-4">
+              </div>
+            </div>
+          </p>
+          <p class="mt-6 text-gray-500 font-semibold">Til dig, der gerne vil eje din varmepumpe.</p>
+
+          <!-- Feature list -->
+          <ul role="list" class="mt-6 space-y-4">
+            <li class="flex">
+              <!-- Heroicon name: outline/check -->
+              <svg class="flex-shrink-0 w-6 h-6 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-3 text-gray-500">Markedsledende varmepumpe tilpasset nordisk klima</span>
+            </li>
+
+            <li class="flex">
+              <!-- Heroicon name: outline/check -->
+              <svg class="flex-shrink-0 w-6 h-6 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-3 text-gray-500">Betal kontant eller stå selv for finansieringen</span>
+            </li>
+
+            <li class="flex">
+              <!-- Heroicon name: outline/check -->
+              <svg class="flex-shrink-0 w-6 h-6 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-3 text-gray-500">Stå selv for service og reparation</span>
+            </li>
+
+            <li class="flex">
+              <!-- Heroicon name: outline/check -->
+              <svg class="flex-shrink-0 w-6 h-6 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-3 text-gray-500">Nemt overblik og styring med Varmeo app</span>
+            </li>
+
+          </ul>
+        </div>
+
+        <%= mail_to "info@varmeo.dk", "Få et gratis tilbud",
+                    class: "bg-sky-50 text-sky-700 hover:bg-sky-100 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium" %>
+      </div>
+
+      <div class="relative p-8 bg-white border border-sky-600 rounded-2xl shadow-sm flex flex-col">
+        <div class="flex-1">
+          <h3 class="text-xl font-semibold text-gray-900">Varmepumpe på abonnement</h3>
+
+          <p class="absolute top-0 py-1.5 px-4 bg-red-gradient rounded-full text-xs font-semibold uppercase tracking-wide text-white transform -translate-y-1/2">Mest populære</p>
+          <p class="mt-4 flex items-baseline text-gray-900">
+            <h3 class="text-sky-600 text-sm font-semibold uppercase tracking-wide">Kontant</h3>
+            <div class="flex items-center">
+              <p class="text-sky-600 text-4xl font-extrabold tracking-tight">6.000</p>
+              <div class="ml-4">
+                <p class="text-gray-700 text-sm">kr.</p>
+              </div>
+            </div>
+          </p>
+
+          <p class="mt-4 flex items-baseline text-gray-900">
+            <h3 class="text-sky-600 text-sm font-semibold uppercase tracking-wide">LØBENDE</h3>
+            <div class="flex items-center">
+              <!-- <p id="price" x-text="total_value < 1197 ? 349 : Math.ceil(total_value * 3.5 / 12)" class="text-sky-600 text-4xl font-extrabold tracking-tight">349</p> -->
+              <p id="price" class="text-sky-600 text-4xl font-extrabold tracking-tight">1.450</p>
+              <div class="ml-4">
+                <p class="text-gray-700 text-sm">kr. / md</p>
+                <!-- <p class="text-gray-500 text-sm"><span x-text="total_value">1000</span> kWh / år</p> -->
+                <p class="text-gray-500 text-sm">Frapris (afhængig af pumpestørrelse)</p>
+              </div>
+            </div>
+          </p>
+          <p class="mt-6 text-gray-500 font-semibold">Til dig, der gerne vil have en pålidelig varmeløsning nemt og billigt.</p>
+
+          <!-- Feature list -->
+          <ul role="list" class="mt-6 space-y-4">
+            <li class="flex">
+              <!-- Heroicon name: outline/check -->
+              <svg class="flex-shrink-0 w-6 h-6 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-3 text-gray-500">Markedsledende varmepumpe tilpasset nordisk klima</span>
+            </li>
+
+            <li class="flex">
+              <!-- Heroicon name: outline/check -->
+              <svg class="flex-shrink-0 w-6 h-6 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-3 text-gray-500">Indkøb, installation og driftsoptimering</span>
+            </li>
+
+            <li class="flex">
+              <!-- Heroicon name: outline/check -->
+              <svg class="flex-shrink-0 w-6 h-6 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-3 text-gray-500">Fri service, reparation og udskiftning</span>
+            </li>
+
+            <li class="flex">
+              <!-- Heroicon name: outline/check -->
+              <svg class="flex-shrink-0 w-6 h-6 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-3 text-gray-500">Mulighed for at købe varmepumpen senere til restværdi</span>
+            </li>
+
+            <li class="flex">
+              <!-- Heroicon name: outline/check -->
+              <svg class="flex-shrink-0 w-6 h-6 text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-3 text-gray-500">Nemt overblik og styring med Varmeo app</span>
+            </li>
+
+          </ul>
+        </div>
+
+        <%= mail_to "info@varmeo.dk", "Få et gratis tilbud",
+                    class: "btn btn-xl btn-red-gradient w-full block text-center sm:mt-6" %>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+
+<%= render "static/luft_til_vand/feature_comparison_sm" %>
+<%= render "static/luft_til_vand/feature_comparison_lg" %>
+<div class="sm:bg-gray-50 -mt-12">
+  <%= render "static/shared/kinnan_map" %>
+</div>
+
+<%= render "static/index/logo_cloud_section" %>
