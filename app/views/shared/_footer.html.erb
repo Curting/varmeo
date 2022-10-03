@@ -33,7 +33,7 @@
         </svg>
       </a>
     </div> -->
-    <div class="mt-8 text-center text-base text-gray-400">
+    <div class="mt-8 text-center text-base text-gray-500">
       <%= phone_to "70230250",
                   class: "btn btn-link" do %>
         <%= render_svg "icons/phone-solid",
@@ -53,8 +53,18 @@
       <p>CVR 43210343</p>
     </div>
 
-    <p class="mt-8 text-center text-base text-gray-400">
-      &copy; 2022 Varmeo ApS
+    <p class="mt-8 text-center text-base text-gray-500">
+      <%= link_to "Persondatapolitik",
+                  persondatapolitik_path,
+                  class: "hover:text-gray-600" %>
+      ·
+      <%= link_to "Cookiedeklaration",
+                  cookiedeklaration_path,
+                  class: "hover:text-gray-600" %>
+    </p>
+
+    <p class="mt-8 text-center text-base text-gray-500">
+      Copyright &copy; 2022 Varmeo ApS · <span class="text-gray-400">Made by <a href="https://www.curtingmedia.dk" target="_blank" class="hover:text-gray-600">Curting Media</a></span>
     </p>
   </div>
 </footer>

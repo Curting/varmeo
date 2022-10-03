@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     get :luft_til_vand, path: "luft-til-vand"
     get :luft_til_luft, path: "luft-til-luft"
     get :hero, path: "luft-til-luft/hero"
+    get :persondatapolitik
+    get :cookiedeklaration
   end
 
   root 'static#index'
