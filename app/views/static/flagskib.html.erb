@@ -1,0 +1,313 @@
+<% content_for :meta_title, "Luft-til-luft varmepumpe (Panasonic Flagskib) - 429 kr./md." %>
+<% content_for :meta_description, "Spar op til 50% på din varmeregning. 14 dages leveringstid. Kun 429 kr./md. Bestil i dag og få en luft-til-luft varmepumpe som supplerende varmekilde." %>
+<% content_for :meta_image, image_path("hero/hero-living1.jpg") %>
+
+<script async src="https://tally.so/widgets/embed.js"></script>
+
+<div class="bg-white">
+  <div class="pt-6 border-t border-gray-200">
+    <nav aria-label="Breadcrumb">
+      <ol role="list" class="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        <li>
+          <div class="flex items-center">
+            <a href="#" class="mr-2 text-sm font-medium text-gray-900">Varmepumper</a>
+            <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="h-5 w-4 text-gray-300">
+              <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+            </svg>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex items-center">
+            <%= link_to "Luft-til-luft",
+                        luft_til_luft_path,
+                        class: "mr-2 text-sm font-medium text-gray-900" %>
+            <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="h-5 w-4 text-gray-300">
+              <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+            </svg>
+          </div>
+        </li>
+
+        <li class="text-sm">
+          <a href="#" aria-current="page" class="font-medium text-gray-500 hover:text-gray-600">Flagskib - Kampagnetilbud</a>
+        </li>
+      </ol>
+    </nav>
+
+    <!-- Image gallery -->
+    <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
+      <div class="col-span-2 flex overflow-hidden rounded-lg justify-center">
+        <%= image_tag "flagskib/stue.jpg",
+                      class: "h-full w-full object-cover object-center" %>
+      </div>
+      <div class="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
+        <div class="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg">
+          <%= image_tag "flagskib/indedel.jpg",
+                        class: "h-full w-full object-cover object-center" %>
+        </div>
+        <div class="overflow-hidden rounded-lg p-8 bg-gray-100">
+          <%= image_tag "flagskib/udedel.jpg",
+                        class: "h-full w-full object-cover object-center" %>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product info -->
+    <div class="mx-auto max-w-2xl px-4 pt-10 pb-16 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pt-16 lg:pb-24">
+      <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
+        <span class="inline-flex items-center rounded-full bg-sky-100 px-3 py-0.5 text-sm font-medium text-sky-800">⭐️ Kampagnetilbud</span>
+        <span class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-0.5 text-sm font-medium text-emerald-800 mt-2 sm:mt-0">🚚 Strakslevering</span>
+        <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl mt-3">Luft-til-luft varmepumpe - Panasonic Flagskib</h1>
+        <p class="text-lg font-medium text-gray-500 mt-2">Effektivt varme- og kølesystem i ét fra Panasonic</p>
+      </div>
+
+      <!-- Options -->
+      <div class="mt-4 lg:row-span-3 lg:mt-0">
+        <div class="sticky top-10">
+            <h2 class="sr-only">Product information</h2>
+            <div class="mt-6">
+              <h2 class="text-xl font-medium tracking-tight text-gray-900">Få den på abonnement</h2>
+
+              <p class="mt-2 flex items-center text-gray-500">
+                <!-- Heroicon name: mini/check-circle -->
+                <%= render_svg "icons/check-solid",
+                                styles: "mr-1.5 h-6 w-6 text-emerald-600" %>
+                Betaler sig selv hjem fra første måned
+              </p>
+
+              <p class="mt-2 flex items-center text-gray-500">
+                <!-- Heroicon name: mini/check-circle -->
+                <%= render_svg "icons/check-solid",
+                                styles: "mr-1.5 h-6 w-6 text-emerald-600" %>
+                Inkl. montering, service og reparation
+              </p>
+
+              <p class="mt-2 flex items-center text-gray-500">
+                <!-- Heroicon name: mini/check-circle -->
+                <%= render_svg "icons/check-solid",
+                                styles: "mr-1.5 h-6 w-6 text-emerald-600" %>
+                Nem at opsige eller frikøbe
+              </p>
+
+              <p class="text-3xl tracking-tight text-gray-900 mt-6">429 kr. <span class="text-xl text-gray-500">pr. måned</span></p>
+              <p class="text-sm text-gray-500">Plus 1.000 kr. opstartsbeløb</p>
+            </div>
+
+            <!-- Reviews -->
+            <div class="mt-6">
+              <h3 class="sr-only">Reviews</h3>
+              <div class="flex items-center">
+                <div class="flex items-center">
+                  <!--
+                    Heroicon name: mini/star
+
+                    Active: "text-gray-900", Default: "text-gray-200"
+                  -->
+                  <% 5.times do %>
+                    <%= render_svg "icons/star-solid",
+                                    styles: "text-emerald-600 h-6 w-6 flex-shrink-0" %>
+                  <% end %>
+                </div>
+                <p class="sr-only">5 out of 5 stars</p>
+                <div class="w-px bg-gray-300 h-6 ml-3"></div>
+                <a href="#" target="_blank" class="ml-3 text-sm font-medium text-gray-600 hover:text-gray-700">Bedst i test</a>
+              </div>
+            </div>
+
+            <button id="order_button1" data-tally-open="mKpBB7" data-tally-layout="modal" data-tally-width="650" class="mt-10 btn btn-xl bg-emerald-600 hover:bg-emerald-700 text-white w-full justify-center">Bestil abonnement tilbud</button>
+
+            <div class="mt-8">
+              <div class="relative">
+                <div class="absolute inset-0 flex items-center">
+                  <div class="w-full border-t border-gray-300"></div>
+                </div>
+                <div class="relative flex justify-center text-sm">
+                  <span class="bg-white px-2 text-gray-500">Eller få vejledning på</span>
+                </div>
+              </div>
+              <div class="mt-3 text-center text-base text-gray-400">
+                <%= phone_to "70230250",
+                            class: "btn btn-link font-normal" do %>
+                  <%= render_svg "icons/phone-solid",
+                                  styles: "btn-icon" %>
+                  70 230 250
+                <% end %>
+
+                <%= mail_to "info@varmeo.dk",
+                            class: "btn btn-link font-normal" do %>
+                  <%= render_svg "icons/mail-solid",
+                                  styles: "btn-icon" %>
+                  info@varmeo.dk
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="py-10 lg:col-span-2 lg:col-start-1 lg:border-r lg:border-gray-200 lg:pt-6 lg:pb-16 lg:pr-8">
+        <!-- Description and details -->
+        <div>
+          <h3 class="sr-only">Beskrivelse</h3>
+
+          <div class="space-y-6">
+            <p class="text-base text-gray-900">Panasonic Flagskib HZ varmepumpen er en af markedets absolut bedste. Takket være dens exceptionelle ydeevne og pålidelighed er det en af de bedst sælgende varmepumper i Norden. Hvor man tidligere var tilfreds med en effekt på 3 eller 4, er du nu helt oppe på at <strong>få 5 gange så meget energi</strong> ud af denne Panasonic varmepumpe i forhold til det, du hælder i (SCOP 5,3). Det giver dig naturligvis en fremragende økonomi sammenlignet med andre opvarmningskilder. Denne model er specielt velegnet til parcelhuse og det danske klima, samt som supplerende varme til gasopvarmede parcelhuse.</p>
+
+            <p class="text-base text-gray-900"><strong>Opvarmer du med gas, olie eller træpiller i dag?</strong> Så er denne varmepumpe idéel til dig som supplerende varmekilde. I disse tider med stadigt stigende priser på fossile brændstoffer, kan du spare helt op til 50% på dit varmeforbrug ved at supplere med Panasonic Flagskib. Gør dig selv en tjeneste — udskyd fyringssæsonen, reducer dit varmeforbrug og få flere penge på kontoen allerede fra om 14 dage med vores hurtige levering i hele Danmark.</p>
+
+            <p class="text-base text-gray-900">Se eksemplet på hvordan <a href="#eksempel" class="font-medium text-gray-700 underline hover:no-underline">en gennemsnitsfamilie kan spare 1.280 kr. om måneden</a> med en varmepumpe. Og det er endda efter alle udgifter til varmepumpen er betalt!</p>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <h3 class="text-sm font-medium text-gray-900">Højdepunkter</h3>
+
+          <div class="mt-4">
+            <ul role="list" class="list-disc space-y-2 pl-4 text-sm">
+            
+              <li class="text-gray-400"><span class="text-gray-600">Få helt op til 5,3 kWh varme, når du hælder 1 kWh i din Panasonic Flagskib</span></li>
+
+              <li class="text-gray-400"><span class="text-gray-600">Højeste energieffektivitetsklasse: A+++</span></li>
+
+              <li class="text-gray-400"><span class="text-gray-600">Musestille drift på kun 18 dB [A]</span></li>
+
+              <li class="text-gray-400"><span class="text-gray-600">Nanoe™ X-teknologi renser dit indeklima og gør det mere behageligt</span></li>
+
+              <li class="text-gray-400"><span class="text-gray-600">Kompatibel med stemmeassistent og styring af flere enheder</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <%= image_tag "hero/hero-living1.jpg",
+                      class: "mt-10 rounded" %>
+
+        <div class="mt-10">
+          <h2 class="text-xl font-medium text-gray-900">Dine fordele ved varmepumpe på abonnement</h2>
+
+          <div class="mt-4 space-y-6">
+            <p class="text-sm text-gray-600">Du er hjertens velkommen til at købe varmepumpen kontant hos os. Når det er sagt, får du det bedste fra begge verdener, når du får den på abonnement i stedet. Din månedlige udgift er minimal og din øjeblikkelige besparelse betyder, at den - i de flestes tilfælde - betaler sig selv hjem allerede fra første måned af.</p>
+
+            <p class="text-sm text-gray-600">Med et abonnement slipper du også for bekymringer, besvær og investering med lang tilbagebetalingstid. Det tager vi os af. Vi søger for alt og driver varmepumpen hos dig i hele kontraktperioden inklusiv service, reparation og evt. udskiftning. Dét er en god varmeløsning!</p>
+
+            <p class="text-sm text-gray-600">Du kan altid opsige aftalen med 12 måneders varsel eller frikøbe varmepumpen til restværdien. Transparent og fair.</p>
+
+            <p class="text-sm text-gray-400"><i>Krav for at få varmepumpe på abonnement: Du er ikke registreret i RKI eller Debitor Registreret.</i></p>
+          </div>
+        </div>
+
+        <%= image_tag "hero/martingravgaard_900px.jpg",
+                      class: "mt-10 rounded" %>
+
+        <div class="mt-10">
+          <h2 class="text-xl font-medium text-gray-900" id="eksempel">Spar 14.580 kr. om året på din varmeregning</h2>
+
+          <div class="mt-4 space-y-6">
+            <p class="text-sm text-gray-600">Hvis du har gas-, olie eller pillefyr, har du store besparelser at hente med en varmepumpe som supplerende varmekilde. I eksemplerne nedenfor, har vi taget udgangspunkt i en gennemsnitsfamilie. Når de overgår fra gasfyr til et varmesplit på 25% gasfyr og 75% varmepumpe, opnår de en besparelse på hele 14.580 kr. om året. Det er 1.215 kr. ekstra om måneden, du kan bruge på noget sjovere. Og det er endda efter udgifterne til dit abonnement af varmepumpen er betalt!</p>
+          </div>
+        </div>
+
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <div class="overflow-hidden bg-white border border-gray-200 sm:rounded-lg mt-10">
+          <div class="px-4 py-5 sm:px-6">
+            <h3 class="text-lg font-medium leading-6 text-gray-900">Eksempel: Opvarmning med 100% gas</h3>
+            <p class="mt-1 max-w-2xl text-sm text-gray-500">Opvarmning udelukkende med gasfyr. Beregningerne er lavet med udgangspunkt i en gennemsnitsfamilie på 4 personer i et etplans parcelhus.</p>
+
+            <p class="mt-4 max-w-2xl text-sm text-gray-500">Prisen pr. m3 gas er i skrivende stund ~25 kr.</p>
+          </div>
+          <div class="border-t border-gray-200">
+            <dl>
+              <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">Gasforbrug (årligt)</dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">2.000 m3 gas => 20.000 kWh</dd>
+              </div>
+              <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">Brugsvand fratrækkes</dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">20.000 kWh - 4.000 kWh brugsvand => 16.000 kWh varme</dd>
+              </div>
+              <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">Samlet varmeforbrug</dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+                  16.000 kWh varme = 1.600 m3 gas * 25 kr./m3 => <strong>40.000 kr./årligt</strong>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <div class="overflow-hidden bg-white border border-gray-200 sm:rounded-lg mt-10">
+          <div class="px-4 py-5 sm:px-6">
+            <h3 class="text-lg font-medium leading-6 text-gray-900">Eksempel: Opvarmning med 25% gas / 75% varmepumpe (Flagskib)</h3>
+            <p class="mt-1 max-w-2xl text-sm text-gray-500">Luft-til-luft varmepumpe som supplerende varmekilde til gasfyr. Beregningerne er lavet med udgangspunkt i en gennemsnitsfamilie på 4 personer i et etplans parcelhus.</p>
+
+            <p class="mt-4 max-w-2xl text-sm text-gray-500">SCOP-værdien for Flagskib-modellen er 5,3. Det vil sige, at den giver 5,3 kWH varme, når du hælder 1 kWh i den. I beregningerne nedenfor er vi konservative og har sat den til en middelværdi på 4. Din Flagskib skal med andre ord kun bruge 3.000 kWH for at opvarme 12.000 kWh.</p>
+          </div>
+          <div class="border-t border-gray-200">
+            <dl>
+              <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">Årligt varmeforbrug (kWh)</dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">16.000 kWh varme</dd>
+              </div>
+              <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">Opvarmning (25% gas)</dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">16.000 kWh * 25% => 4.000 kWh varme</dd>
+              </div>
+              <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">Opvarmning (75% varmepumpe)</dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">16.000 kWh * 75% => 12.000 kWh varme</dd>
+              </div>
+              <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">Varmeforbrug (gas)</dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">4.000 kWh varme = 400 m3 gas * 25 kr./m3 => 10.000 kr./årligt</dd>
+              </div>
+              <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">Varmeforbrug (varmepumpe)</dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">12.000 kWh / 4 SCOP = 3.000 kWh * 3,5 kr./kWh => 10.500 kr./årligt</dd>
+              </div>
+              <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">Samlet varmeforbrug (kr.)</dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">10.000 kr. (gas) + 10.500 kr. (varmepumpe) => 20.500 kr./årligt</dd>
+              </div>
+              <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">Abonnement på varmepumpe</dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">429 kr./md. => 4.920 kr./årligt</dd>
+              </div>
+              <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">Varmeforbrug + abonnement</dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">20.500 kr. varmeforbrug + 4.920 kr. abonnement => 25.420 kr./årligt</dd>
+              </div>
+              <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">Din besparelse</dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">40.000 kr. (fra forrige eksempel) - 25.420 kr. => <strong>14.580 kr./årligt</strong></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <div class="bg-white">
+          <div class="mx-auto mt-16 max-w-7xl px-4 text-center sm:px-6 lg:mt-20 lg:px-8">
+            <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+              <span class="block font-bold">Få varmepumpe på abonnement</span>
+              <span class="block text-2xl mt-3 text-gray-600">Spar op til 50% på din varmeregning allerede fra 1. måned</span>
+            </h2>
+            <div class="mt-8 flex justify-center">
+              <div class="inline-flex rounded-md shadow">
+                <button id="order_button2" data-tally-open="mKpBB7" data-tally-layout="modal" data-tally-width="650" class="inline-flex items-center justify-center rounded-md border border-transparent bg-emerald-600 px-5 py-3 text-base font-medium text-white hover:bg-emerald-700">Bestil abonnement tilbud</button>
+              </div>
+
+              <div class="ml-3 inline-flex">
+                <%= phone_to "70230250",
+                              "Ring og få vejledning",
+                              class: "inline-flex items-center justify-center rounded-md border border-transparent bg-emerald-100 px-5 py-3 text-base font-medium text-emerald-700 hover:bg-emerald-200" %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="-mt-20">
+    <%= render "static/shared/kinnan_map" %>
+  </div>
+</div>
