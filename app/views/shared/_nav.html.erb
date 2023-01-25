@@ -40,15 +40,12 @@
                             focusAfter && focusAfter.focus()
                         }
                     }"
-                    x-on:keydown.escape.prevent.stop="close($refs.button)"
-                    x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
-                    x-id="['dropdown-button']"
                     class="relative"
                 >
                     <!-- Button -->
                     <button
                         x-ref="button"
-                        x-on:click="toggle()"
+                        @click="open = !open"
                         :aria-expanded="open"
                         :aria-controls="$id('dropdown-button')"
                         type="button"
@@ -113,7 +110,7 @@
                     <!-- Button -->
                     <button
                         x-ref="button"
-                        x-on:click="toggle()"
+                        @click="open = !open"
                         :aria-expanded="open"
                         :aria-controls="$id('dropdown-button')"
                         type="button"
@@ -218,7 +215,7 @@
                           <!-- Button -->
                           <button
                               x-ref="button"
-                              x-on:click="toggle()"
+                              @click="open = !open"
                               :aria-expanded="open"
                               :aria-controls="$id('dropdown-button')"
                               type="button"
@@ -283,7 +280,7 @@
                           <!-- Button -->
                           <button
                               x-ref="button"
-                              x-on:click="toggle()"
+                              @click="open = !open"
                               :aria-expanded="open"
                               :aria-controls="$id('dropdown-button')"
                               type="button"
