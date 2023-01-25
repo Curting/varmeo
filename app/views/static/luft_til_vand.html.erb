@@ -1,5 +1,7 @@
 <% content_for :meta_title, "Varmepumpe luft-til-vand" %>
 
+<script async src="https://tally.so/widgets/embed.js"></script>
+
 <div x-data="{total_value:1000}">
   
   <!-- This example requires Tailwind CSS v2.0+ -->
@@ -8,6 +10,28 @@
       <div class="text-center">
         <p class="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Varmepumpe - Luft-til-vand</p>
         <p class="max-w-xl mt-5 mx-auto text-xl text-sky-100">Halvér din varmeregning. Sammenlign nemt om det giver bedst mening for dig at købe eller få varmepumpen på abonnement.</p>
+      </div>
+
+      <div class="max-w-2xl mx-auto mt-12">
+        <div class="rounded-md bg-emerald-50 p-4">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <%= render_svg "icons/star-solid",
+                              styles: "h-5 w-5 text-emerald-500" %>
+              </svg>
+            </div>
+            <div class="ml-3 flex-1 md:flex md:justify-between">
+              <p class="text-sm text-emerald-700 font-medium"><strong>Kampagnetilbud</strong> på vores mest populære varmepumpe til kun <strong>1.100 kr./md.</strong></p>
+              <p class="mt-3 text-sm md:mt-0 md:ml-6">
+                <%= link_to :ecodan_silent,
+                            class: "whitespace-nowrap font-medium text-emerald-700 hover:text-emerald-600" do %>
+                  Se mere
+                  <span aria-hidden="true"> &rarr;</span>
+                <% end %>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- This example requires Tailwind CSS v2.0+ -->
@@ -104,8 +128,8 @@
           </ul>
         </div>
 
-        <%= mail_to "info@varmeo.dk", "Få et gratis tilbud",
-                    class: "bg-sky-50 text-sky-700 hover:bg-sky-100 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium" %>
+        <button id="order_button1" data-tally-open="mDqdMj" data-tally-layout="modal" data-tally-width="650" class="bg-sky-50 text-sky-700 hover:bg-sky-100 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium">Få et gratis tilbud</button>
+
       </div>
 
       <div class="relative p-8 bg-white border border-sky-600 rounded-2xl shadow-sm flex flex-col">
@@ -127,7 +151,7 @@
             <h3 class="text-sky-600 text-sm font-semibold uppercase tracking-wide">LØBENDE</h3>
             <div class="flex items-center">
               <!-- <p id="price" x-text="total_value < 1197 ? 349 : Math.ceil(total_value * 3.5 / 12)" class="text-sky-600 text-4xl font-extrabold tracking-tight">349</p> -->
-              <p id="price" class="text-sky-600 text-4xl font-extrabold tracking-tight">1.450</p>
+              <p id="price" class="text-sky-600 text-4xl font-extrabold tracking-tight">1.100</p>
               <div class="ml-4">
                 <p class="text-gray-700 text-sm">kr. / md</p>
                 <!-- <p class="text-gray-500 text-sm"><span x-text="total_value">1000</span> kWh / år</p> -->
@@ -182,9 +206,8 @@
           </ul>
         </div>
 
-        <%= link_to "Få et gratis tilbud",
-                    :luft_til_vand_form,
-                    class: "btn btn-xl btn-red-gradient w-full block text-center sm:mt-6" %>
+        <button id="order_button1" data-tally-open="mDqdMj" data-tally-layout="modal" data-tally-width="650" class="btn btn-xl btn-red-gradient w-full block text-center sm:mt-6">Få et gratis tilbud</button>
+
       </div>
 
     </div>

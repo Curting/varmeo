@@ -1,0 +1,294 @@
+<% content_for :meta_title, "Luft-til-vand varmepumpe (Mitsubishi Ecodan) - 1.100 kr./md." %>
+<% content_for :meta_description, "Spar op til 60% på din varmeregning. 14 dages leveringstid. Fra kun 1.100 kr./md. Få et gratis tilbud på luft-til-vand varmepumpe i dag." %>
+<% content_for :meta_image, image_path("hero/hero-living1.jpg") %>
+
+<script async src="https://tally.so/widgets/embed.js"></script>
+
+<div class="bg-white">
+  <div class="pt-6 border-t border-gray-200">
+    <nav aria-label="Breadcrumb">
+      <ol role="list" class="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        <li>
+          <div class="flex items-center">
+            <a href="#" class="mr-2 text-sm font-medium text-gray-900">Varmepumper</a>
+            <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="h-5 w-4 text-gray-300">
+              <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" /> 
+            </svg>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex items-center">
+            <%= link_to "Luft-til-vand",
+                        luft_til_vand_path,
+                        class: "mr-2 text-sm font-medium text-gray-900" %>
+            <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="h-5 w-4 text-gray-300">
+              <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+            </svg>
+          </div>
+        </li>
+
+        <li class="text-sm">
+          <a href="#" aria-current="page" class="font-medium text-gray-500 hover:text-gray-600">Ecodan Silent</a>
+        </li>
+      </ol>
+    </nav>
+
+    <!-- Image gallery -->
+    <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
+      <div class="col-span-2 flex overflow-hidden rounded-lg justify-center">
+        <%= image_tag "family_vand_1100.jpg",
+                      class: "h-full w-full object-cover object-center" %>
+      </div>
+      <div class="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
+        <div class="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg">
+          <%= image_tag "ecodan/tank.jpg",
+                        class: "h-full w-full object-cover object-center" %>
+        </div>
+        <div class="overflow-hidden rounded-lg">
+          <%= image_tag "ecodan/house.jpg",
+                        class: "h-full w-full object-cover object-center" %>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product info -->
+    <div class="mx-auto max-w-2xl px-4 pt-10 pb-16 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pt-16 lg:pb-24">
+      <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
+        <span class="inline-flex items-center rounded-full bg-sky-100 px-3 py-0.5 text-sm font-medium text-sky-800">⭐️ Kampagnetilbud</span>
+        <span class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-0.5 text-sm font-medium text-emerald-800 mt-2 sm:mt-0">🚚 Strakslevering</span>
+        <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl mt-3">Luft-til-vand varmepumpe - Mitsubishi Ecodan Silent</h1>
+        <p class="text-lg font-medium text-gray-500 mt-2">Den optimale erstatning for oliefyr, pillefyr og gasfyr</p>
+      </div>
+
+      <!-- Options -->
+      <div class="mt-4 lg:row-span-3 lg:mt-0">
+        <div class="sticky top-10">
+            <h2 class="sr-only">Produktinformation</h2>
+            <div class="mt-6">
+              <h2 class="text-xl font-medium tracking-tight text-gray-900">Få varmepumpen på abonnement</h2>
+
+              <p class="mt-2 flex items-center text-gray-500">
+                <!-- Heroicon name: mini/check-circle -->
+                <%= render_svg "icons/check-solid",
+                                styles: "mr-1.5 h-6 w-6 text-emerald-600" %>
+                Betaler sig hurtigt hjem
+              </p>
+
+              <p class="mt-2 flex items-center text-gray-500">
+                <!-- Heroicon name: mini/check-circle -->
+                <%= render_svg "icons/check-solid",
+                                styles: "mr-1.5 h-6 w-6 text-emerald-600" %>
+                Inkl. montering, service og reparation
+              </p>
+
+              <p class="mt-2 flex items-center text-gray-500">
+                <!-- Heroicon name: mini/check-circle -->
+                <%= render_svg "icons/check-solid",
+                                styles: "mr-1.5 h-6 w-6 text-emerald-600" %>
+                Nem at opsige eller frikøbe
+              </p>
+
+              <p class="text-3xl tracking-tight text-gray-900 mt-6">1.100 kr. <span class="text-xl text-gray-500">pr. måned <span class="text-gray-400">(frapris)</span></span></p>
+              <p class="text-sm text-gray-500">Plus 6.000 kr. opstartsbeløb</p>
+            </div>
+
+            <!-- Reviews -->
+            <div class="mt-6">
+              <h3 class="sr-only">Reviews</h3>
+              <div class="flex items-center">
+                <div class="flex items-center">
+                  <!--
+                    Heroicon name: mini/star
+
+                    Active: "text-gray-900", Default: "text-gray-200"
+                  -->
+                  <% 5.times do %>
+                    <%= render_svg "icons/star-solid",
+                                    styles: "text-emerald-600 h-6 w-6 flex-shrink-0" %>
+                  <% end %>
+                </div>
+                <p class="sr-only">5 out of 5 stars</p>
+                <div class="w-px bg-gray-300 h-6 ml-3"></div>
+                <a href="#" target="_blank" class="ml-3 text-sm font-medium text-gray-600 hover:text-gray-700">Bedst i test</a>
+              </div>
+            </div>
+
+            <button id="order_button1" data-tally-open="mDqdMj" data-tally-layout="modal" data-tally-width="650" class="mt-10 btn btn-xl bg-emerald-600 hover:bg-emerald-700 text-white w-full justify-center">Få abonnement tilbud</button>
+
+            <div class="mt-8">
+              <div class="relative">
+                <div class="absolute inset-0 flex items-center">
+                  <div class="w-full border-t border-gray-300"></div>
+                </div>
+                <div class="relative flex justify-center text-sm">
+                  <span class="bg-white px-2 text-gray-500">Eller få vejledning på</span>
+                </div>
+              </div>
+              <div class="mt-3 text-center text-base text-gray-400">
+                <%= phone_to "70230250",
+                            class: "btn btn-link font-normal" do %>
+                  <%= render_svg "icons/phone-solid",
+                                  styles: "btn-icon" %>
+                  70 230 250
+                <% end %>
+
+                <%= mail_to "info@varmeo.dk",
+                            class: "btn btn-link font-normal" do %>
+                  <%= render_svg "icons/mail-solid",
+                                  styles: "btn-icon" %>
+                  info@varmeo.dk
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="py-10 lg:col-span-2 lg:col-start-1 lg:border-r lg:border-gray-200 lg:pt-6 lg:pb-16 lg:pr-8">
+        <!-- Description and details -->
+        <div>
+          <h3 class="sr-only">Beskrivelse</h3>
+
+          <div class="space-y-6">
+            <p class="text-base text-gray-900">Vil du spare på din varmeregning og øge værdien af din bolig? Så har du den ultimative løsning foran dig. Mitsubishi's Ecodan Silent er en af vores <strong>bedst sælgende luft-til-vand varmepumper</strong>. Ikke underligt med tanke på, hvordan dens unikke teknologi imødekommer fremtidige krav til varme, økonomi og miljøvenlighed. Efter et stykke tid lærer systemet, hvilke særlige forhold der gælder for dit hus, og justerer din opvarmning til det mest effektive mulige energiforbrug. Ingen energi spildes, hvilket gavner både din pengepung og miljøet.</p>
+
+            <p class="text-base text-gray-900"><strong>Forestil dig at vågne op til et varmt og behageligt hjem</strong>, selv på de koldeste vintermorgener. Ecodan Silent's teknologi gør det muligt for den at udvinde varme fra udeluften, selv når temperaturen falder helt ned til -28 °C. Det betyder, at du kan sige farvel til dyre fossile brændstoffer og goddag til betydelige besparelser på din varmeregning.</p>
+
+            <p class="text-base text-gray-900">Din opvarmning skal mærkes og ikke høres. Derfor er Ecodan en af <strong>markedets mest lydsvage</strong> modeller til fordel for både dig og dine naboer.</p>
+
+            <p class="text-base text-gray-900">Varmepumpen fås i flere forskellige designs og størrelser, så du kan vælge det bedste til dit hus. Dens minimalistiske udseende sikrer, at den <strong>passer problemfrit ind i dit hjems æstetik</strong>, så du kan nyde et varmt og behageligt hjem uden at ofre stilen. Derudover øger en luft til vand varmepumpe værdien af dit hus i tilfælde af et salg.</p>
+          </div>
+        </div>
+
+        <%= render "static/shared/sparenergi" %>
+
+        <div class="mt-10">
+          <h3 class="text-sm font-medium text-gray-900">Højdepunkter</h3>
+
+          <div class="mt-4">
+            <ul role="list" class="list-disc space-y-2 pl-4 text-sm">
+            
+              <li class="text-gray-400"><span class="text-gray-600">Giver en fremragende økonomi og øget boligværdi</li>
+
+              <li class="text-gray-400"><span class="text-gray-600">Højeste energieffektivitetsklasse: A+++</span></li>
+
+              <li class="text-gray-400"><span class="text-gray-600">Landsdækkende installation og service</span></li>
+
+              <li class="text-gray-400"><span class="text-gray-600">BBR-godkendt for nybyggeri</span></li>
+
+              <li class="text-gray-400"><span class="text-gray-600">Fremtidssikker og miljøvenlig med kølemidlet R32</span></li>
+
+              <li class="text-gray-400"><span class="text-gray-600">Specialbygget til det nordiske klima ned til -28 °C</span></li>
+
+              <li class="text-gray-400"><span class="text-gray-600">Driftsikker og stort set lydløs</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <%= image_tag "logo/external/mitsubishi_logo.svg", alt: "Mitsubishi Electric logo", class: "mx-auto max-h-8 sm:mx-0 sm:max-h-12 mt-6" %>
+
+        <div class="mt-10">
+          <h3 class="text-sm font-medium text-gray-900">Få flere informationer om varmepumpen</h3>
+
+          <ul role="list" class="divide-y divide-gray-200 rounded-md border border-gray-200 max-w-lg mt-5">
+            <li class="flex items-center justify-between py-3 pl-3 pr-4 text-sm">
+              <div class="flex w-0 flex-1 items-center">
+                <!-- Heroicon name: mini/paper-clip -->
+                <svg class="h-5 w-5 flex-shrink-0 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z" clip-rule="evenodd" />
+                </svg>
+                <span class="ml-2 w-0 flex-1 truncate">Mitsubishi Ecodan Silent (PDF)</span>
+              </div>
+              <div class="ml-4 flex-shrink-0">
+                <a href="https://drive.google.com/file/d/1sKKnH4Wrt_mM5v2xBFl0GT9dhM2rO_qN/view?usp=sharing" target="_blank" class="font-medium text-sky-700 hover:text-sky-500">Hent brochure</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <%= image_tag "ecodan/children.jpg",
+                      class: "mt-10 rounded" %>
+
+        <div class="mt-10">
+          <h2 class="text-xl font-medium text-gray-900">Dine fordele ved varmepumpe på abonnement (nærvarme)</h2>
+
+          <div class="mt-4 space-y-6">
+            <p class="text-sm text-gray-600">Hvis du har gas-, olie eller pillefyr, har du store besparelser at hente ved at udskifte til en luft-til-vand varmepumpe. Det kan dog være en betydelig investeringssum. Derfor får du hos os muligheden for at få din varmepumpe på abonnement (også kaldet nærvarme), så du får det bedste fra begge verdener. Din månedlige udgift er lav og din øjeblikkelige besparelse betyder, at din nye varmepumpe hurtigt betaler sig selv hjem. Når du bestiller et tilbud fra os, får du derfor både et købs- og et abonnementstilbud, så du kan vurdere, hvad der giver bedst mening for din økonomi. <%= link_to "Se sammenligning af køb og abonnement her ›", luft_til_vand_path, class: "underline hover:no-underline", target: "_blank" %></p>
+
+            <p class="text-sm text-gray-600">Med et abonnement slipper du for bekymringer, besvær og investering med lang tilbagebetalingstid. Det tager vi os af. Vi søger for alt og driver varmepumpen hos dig i hele kontraktperioden inklusiv service, reparation og evt. udskiftning. Dét er en god varmeløsning!</p>
+
+            <p class="text-sm text-gray-600">Du kan altid opsige aftalen med 12 måneders varsel eller frikøbe varmepumpen til restværdien. Transparent og fair.</p>
+
+            <p class="text-sm text-gray-400"><i>Krav for at få varmepumpe på abonnement: Du er ikke registreret i RKI eller Debitor Registreret.</i></p>
+          </div>
+        </div>
+
+        <%= image_tag "hero/martingravgaard_900px.jpg",
+                      class: "mt-10 rounded" %>
+
+        <div class="mt-10">
+          <h2 class="text-xl font-medium text-gray-900">Få et gratis tilbud på varmepumpen</h2>
+
+          <div class="mt-4 space-y-6">
+            <p class="text-sm text-gray-600">Det har aldrig været nemmere at få installeret en luft til vand varmepumpe! Med blot tre enkle trin kan du få et nyt, energieffektivt varmesystem i dit hjem på ingen tid.</p>
+
+            <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
+              <div class="overflow-hidden border border-gray-200 rounded-lg bg-white px-4 py-5 sm:p-6">
+                <div class="flex h-12 w-12 items-center justify-center bg-sky-50 rounded-full font-medium text-sky-800 text-lg">
+                  1
+                </div>
+                <dd class="mt-2 text-lg font-medium text-gray-900">Svar på spørgsmål</dd>
+                <dt class="mt-1 text-sm text-gray-500">Først skal du besvare et par enkle spørgsmål om dit hjem. Dette vil give os en idé om dine behov og størrelsen på dit hjem, så du får den optimale varmepumpe.</dt>
+              </div>
+
+              <div class="overflow-hidden border border-gray-200 rounded-lg bg-white px-4 py-5 sm:p-6">
+                <div class="flex h-12 w-12 items-center justify-center bg-sky-50 rounded-full font-medium text-sky-800 text-lg">
+                  2
+                </div>
+                <dd class="mt-2 text-lg font-medium text-gray-900">Modtag gratis tilbud</dd>
+                <dt class="mt-1 text-sm text-gray-500">Når vi har disse oplysninger, får du et gratis tilbud. Det vil indeholde en detaljeret oversigt over omkostningerne, så du ved præcis, hvad du får.
+  </dt>
+              </div>
+
+              <div class="overflow-hidden border border-gray-200 rounded-lg bg-white px-4 py-5 sm:p-6">
+                <div class="flex h-12 w-12 items-center justify-center bg-sky-50 rounded-full font-medium text-sky-800 text-lg">
+                  3
+                </div>
+                <dd class="mt-2 text-lg font-medium text-gray-900">Book installation</dd>
+                <dt class="mt-1 text-sm text-gray-500">Til sidst booker du en dato for installationen. Vores teknikere installerer systemet hurtigt og effektivt med minimal forstyrrelse af din dagligdag.</dt>
+              </div>
+            </dl>
+
+            <p class="text-sm text-gray-600">Lad os hjælpe dig med at holde dig varm og komfortabel året rundt. Besvar spørgsmålene og få et gratis tilbud inden for 24 timer. Tilbuddet indeholder både muligheden for at købe varmepumpen og få den på abonnement.</p>
+          </div>
+        </div>
+
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <div class="bg-white">
+          <div class="mx-auto mt-16 max-w-7xl px-4 text-center sm:px-6 lg:mt-20 lg:px-8">
+            <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+              <span class="block font-bold">Få gratis tilbud på varmepumpe</span>
+              <span class="block text-2xl mt-3 text-gray-600">Spar op til 60% på din varmeregning - start her</span>
+            </h2>
+            <div class="mt-8 sm:flex justify-center">
+              <div class="inline-flex rounded-md shadow">
+                <button id="order_button2" data-tally-open="mDqdMj" data-tally-layout="modal" data-tally-width="650" class="inline-flex items-center justify-center rounded-md border border-transparent bg-emerald-600 px-5 py-3 text-base font-medium text-white hover:bg-emerald-700">Få abonnement tilbud</button>
+              </div>
+
+              <div class="mt-3 sm:mt-0 sm:ml-3 inline-flex">
+                <%= phone_to "70230250",
+                              "Ring og få vejledning",
+                              class: "inline-flex items-center justify-center rounded-md border border-transparent bg-emerald-100 px-5 py-3 text-base font-medium text-emerald-700 hover:bg-emerald-200" %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="-mt-20">
+    <%= render "static/shared/kinnan_map" %>
+  </div>
+  <%= render "static/shared/logo_cloud_section" %>
+</div>
