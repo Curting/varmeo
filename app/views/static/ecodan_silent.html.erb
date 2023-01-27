@@ -283,6 +283,37 @@
           </div>
         </div>
 
+        <!-- Review section -->
+        <article>
+            <div class="flex items-center mb-4 space-x-4 mt-16 pt-16 border-t border-gray-200">
+                
+                <div class="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-sky-100 rounded-full">
+                    <span class="font-medium text-sky-600">JH</span>
+                </div>
+
+                <div class="space-y-1 font-medium">
+                    <p>Jan Hansen <time datetime="2014-08-16 19:00" class="block text-sm text-gray-500">Kunde siden d. 08. december 2022</time></p>
+                </div>
+            </div>
+            <div class="sm:flex items-center mb-1">
+              <div class="flex items-center">
+                <% 5.times do %>
+                  <%= render_svg "icons/star-solid",
+                                  styles: "text-emerald-600 h-5 w-5 flex-shrink-0" %>
+                <% end %>
+              </div>
+                <h3 class="mt-2 sm:mt-0 sm:ml-2 text-sm font-semibold text-gray-900">Vi er meget tilfredse med vores abonnement hos Varmeo!</h3>
+            </div>
+            <footer class="mb-5 text-sm text-gray-500"><p>Anmeldt på Trustpilot d. <time datetime="2023-01-13 19:00">13. januar, 2023</time></p></footer>
+            <p class="mb-2 text-sm text-gray-600">Vi er meget tilfredse med Varmeo, som satte vores varmepumpe op. Det var en meget professionel oplevelse fra start til slut og montørerne var yderst venlige og hjælpsomme. Vi er meget tilfredse med vores abonnement hos Varmeo.dk.</p>
+            <p class="mb-3 text-sm text-gray-600 font-medium">De bedste anbefalinger herfra!</p>
+            <aside>
+              <%= link_to "Læs flere anmeldelser",
+                          "https://dk.trustpilot.com/review/varmeo.dk",
+                          target: "_blank",
+                          class: "text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-xs px-2 py-1.5 mt-3" %>
+            </aside>
+        </article>
 
       </div>
     </div>
