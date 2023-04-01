@@ -1,23 +1,35 @@
-<div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-0.5 rounded overflow-hidden">
+<div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-0.5 rounded overflow-hidden">
   <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
     <div>
-      <a href="https://sparenergi.dk/forbruger/vaerktoejer/energiloesninger/skift-til-varmepumpe-pa-abonnement" target="_blank"><img class="max-h-18 mx-auto" src="https://sparenergi.dk/sites/forbruger.dk/themes/forbruger_theme/logo.svg" alt="Workcation"></a>
-      <p class="text-sm font-medium text-gray-600 text-center mt-1">Kvalificeret leverandør</p>
+      <p class="text-sm font-medium text-gray-600 text-center">Fremragende anmeldelser</p>
+      <div class="flex justify-center align-center mt-1">
+        <% 5.times do %>
+          <%= render_svg "icons/star-solid",
+                          styles: "text-emerald-500 h-8 w-8 flex-shrink-0" %>
+        <% end %>
+      </div>
+      <p class="text-sm text-gray-600 text-center mx-auto hover:underline mt-1"><a href="https://www.trustpilot.com/review/varmeo.dk" target="_blank"><span class="font-medium">4.4</span> ud af 5 på Trustpilot</a></p>
     </div>
   </div>
 
   <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
     <div>
-      <div class="flex justify-center align-center">
-        <% 4.times do %>
-          <%= render_svg "icons/star-solid",
-                          styles: "text-emerald-600 h-8 w-8 flex-shrink-0" %>
-        <% end %>
-        <%= render_svg "icons/star-solid",
-                        styles: "text-gray-400 h-8 w-8 flex-shrink-0" %>
-      </div>
-      <p class="text-sm font-medium text-gray-600 text-center mt-1">Vores kunder er glade for os</p>
-      <p class="text-sm text-gray-600 text-center mx-auto underline hover:no-underline mt-1"><a href="https://www.trustpilot.com/review/varmeo.dk" target="_blank">Læs Trustpilot anmeldelser</a></p>
+      <p class="text-sm font-medium text-gray-600 text-center">Kvalificeret leverandør</p>
+      <a href="https://sparenergi.dk/forbruger/vaerktoejer/energiloesninger/skift-til-varmepumpe-pa-abonnement" target="_blank">
+        <%= image_tag "logo/external/sparenergi.svg",
+                      alt: "Sparenergi",
+                      class: "max-h-18 mx-auto mt-1" %>
+      </a>
+      
+    </div>
+  </div>
+
+  <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+    <div>
+      <p class="text-sm font-medium text-gray-600 text-center">Registreret energivejleder</p>
+      <%= image_tag "logo/external/energivejlederen.png",
+                    alt: "Energivejlederen",
+                    class: "max-h-18 mx-auto mt-1" %>
     </div>
   </div>
 </div>
