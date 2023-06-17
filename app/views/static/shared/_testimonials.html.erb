@@ -1,0 +1,187 @@
+<!-- Testimonial section -->
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+  <div class="mx-auto max-w-xl text-center">
+    <h2 class="text-lg font-semibold leading-8 tracking-tight text-sky-600">Kundeanmeldelser</h2>
+    <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Vi hjælper hundredvis af glade danskere</p>
+  </div>
+  <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+    <figure class="p-12 col-span-2 hidden sm:block sm:rounded-2xl sm:bg-white sm:shadow-lg sm:ring-1 sm:ring-gray-900/5 xl:col-start-2 xl:row-end-1">
+      <div class="mb-1">
+        <div class="flex items-center">
+          <% 5.times do %>
+            <%= render_svg "icons/star-solid",
+                            styles: "text-emerald-500 h-6 w-6 flex-shrink-0" %>
+          <% end %>
+        </div>
+      </div>
+      <blockquote class="mt-3 text-xl font-semibold leading-8 tracking-tight text-gray-900">
+        <p>“Det har været en helt igennem positiv oplevelse at være kunde hos Varmeo. Det er et meget reelt firma, som ikke stikker noget under stolen, hvilket er vigtigt for et langvarigt kundeforhold. Gennem hele forløbet har vi følt os rigtigt godt behandlet, og Vameo får vores bedste anbefalinger.”</p>
+      </blockquote>
+      <figcaption class="mt-6 flex items-center gap-x-4">
+        <img class="h-10 w-10 rounded-full bg-gray-50" src="https://user-images.trustpilot.com/4ae1dfc4000064000101a064/73x73.png" alt="">
+        <div>
+          <div class="font-semibold">Klaus Elmer</div>
+          <div class="text-gray-600">15. marts 2023</div>
+        </div>
+      </figcaption>
+    </figure>
+    <div class="space-y-8 xl:contents xl:space-y-0">
+      <div class="space-y-8 xl:row-span-2">
+        <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+          <div class="mb-1">
+            <div class="flex items-center">
+              <% 5.times do %>
+                <%= render_svg "icons/star-solid",
+                                styles: "text-emerald-500 h-6 w-6 flex-shrink-0" %>
+              <% end %>
+            </div>
+            <h3 class="mt-2 text-sm font-semibold text-gray-900">Super service fra Varmeo og montør</h3>
+          </div>
+          <blockquote class="text-gray-900">
+            <p>“Fuldstændigt gnidningsfri bestilling og installation. Montør brugte god tid på at “sætte os ind i sagerne”. Dejligt at vi ikke skal tænke så meget mere over det 🤩 Så varm (undskyld den dårlige joke 😅) anbefaling herfra”</p>
+          </blockquote>
+          <figcaption class="mt-6 flex items-center gap-x-4">
+            <img class="h-10 w-10 rounded-full bg-gray-50" src="https://user-images.trustpilot.com/5e275f77ddcefaf8da5bef19/73x73.png" alt="">
+            <div>
+              <div class="font-semibold">Bendth Suhr</div>
+              <div class="text-gray-600">25. maj 2023</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+          <div class="mb-1">
+            <div class="flex items-center">
+              <% 5.times do %>
+                <%= render_svg "icons/star-solid",
+                                styles: "text-emerald-500 h-6 w-6 flex-shrink-0" %>
+              <% end %>
+            </div>
+              <h3 class="mt-2 text-sm font-semibold text-gray-900">Vi er meget tilfredse med Varmeo!</h3>
+          </div>
+          <blockquote class="text-gray-900">
+            <p>“Det var en meget professionel oplevelse fra start til slut og montørerne var yderst venlige og hjælpsomme. Vi er meget tilfredse med vores abonnement hos Varmeo.dk. De bedste anbefalinger herfra!”</p>
+          </blockquote>
+          <figcaption class="mt-6 flex items-center gap-x-4">
+            <div class="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-emerald-100 rounded-full">
+                <span class="font-medium text-emerald-600">JH</span>
+            </div>
+            <div>
+              <div class="font-semibold">Jan Hansen</div>
+              <div class="text-gray-600">13. januar 2023</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- More testimonials... -->
+      </div>
+      <div class="space-y-8 xl:row-start-1">
+        <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+          <div class="mb-1">
+            <div class="flex items-center">
+              <% 5.times do %>
+                <%= render_svg "icons/star-solid",
+                                styles: "text-emerald-500 h-6 w-6 flex-shrink-0" %>
+              <% end %>
+            </div>
+              <h3 class="mt-2 text-sm font-semibold text-gray-900">Vi kan virkelig anbefale Varmeo til andre!</h3>
+          </div>
+          <blockquote class="text-gray-900">
+            <p>“Vi har lige købt og fået installeret Mitsubishi luft vand anlæg af Varmeo. Det kan vi virkelig anbefale til andre, hele processen har været super tryg og professionel og samtidig fik vi dem også til at lave ny komplet gulvvarmestyring. Anlægget kører super godt og det var meget dygtige teknikere der lavede det hele.”</p>
+          </blockquote>
+          <figcaption class="mt-6 flex items-center gap-x-4">
+            <div class="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-emerald-100 rounded-full">
+                <span class="font-medium text-emerald-600">JJ</span>
+            </div>
+            <div>
+              <div class="font-semibold">Jan Jeppesen</div>
+              <div class="text-gray-600">22. marts 2023</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- More testimonials... -->
+      </div>
+    </div>
+    <div class="space-y-8 xl:contents xl:space-y-0">
+      <div class="space-y-8 xl:row-start-1">
+        <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+          <div class="mb-1">
+            <div class="flex items-center">
+              <% 5.times do %>
+                <%= render_svg "icons/star-solid",
+                                styles: "text-emerald-500 h-6 w-6 flex-shrink-0" %>
+              <% end %>
+            </div>
+              <h3 class="mt-2 text-sm font-semibold text-gray-900">Alt har været som det skal være - og til tiden</h3>
+          </div>
+          <blockquote class="text-gray-900">
+            <p>“Vi har fået installeret en luft til vand varmepumpe fra Varmeo. Alt har været som det skal være - og til tiden. Nemt at få fat i firmaet ved spørgsmål, så alt i alt en rigtig god og positiv oplevelse, og vi kan på det varmeste anbefale dem.”</p>
+          </blockquote>
+          <figcaption class="mt-6 flex items-center gap-x-4">
+            <div class="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-emerald-100 rounded-full">
+                <span class="font-medium text-emerald-600">JE</span>
+            </div>
+            <div>
+              <div class="font-semibold">Jette</div>
+              <div class="text-gray-600">25. marts 2023</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- More testimonials... -->
+      </div>
+      <div class="space-y-8 xl:row-span-2">
+        <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+          <div class="mb-1">
+            <div class="flex items-center">
+              <% 5.times do %>
+                <%= render_svg "icons/star-solid",
+                                styles: "text-emerald-500 h-6 w-6 flex-shrink-0" %>
+              <% end %>
+            </div>
+              <h3 class="mt-2 text-sm font-semibold text-gray-900">Meget tilfreds!!</h3>
+          </div>
+          <blockquote class="text-gray-900">
+            <p>“Super hurtig betjening fra jeg bestilte på nettet til jeg blev ringet og af montøren og aftalen for installation var booket, og meget effektivt udført arbejde på dagen for montage:)”</p>
+          </blockquote>
+          <figcaption class="mt-6 flex items-center gap-x-4">
+            <div class="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-emerald-100 rounded-full">
+                <span class="font-medium text-emerald-600">CH</span>
+            </div>
+            <div>
+              <div class="font-semibold">Christina</div>
+              <div class="text-gray-600">23. marts 2023</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+          <div class="mb-1">
+            <div class="flex items-center">
+              <% 5.times do %>
+                <%= render_svg "icons/star-solid",
+                                styles: "text-emerald-500 h-6 w-6 flex-shrink-0" %>
+              <% end %>
+            </div>
+              <h3 class="mt-2 text-sm font-semibold text-gray-900">Meget bedre indeklima</h3>
+          </div>
+          <blockquote class="text-gray-900">
+            <p>“Super kontakt til både firma og montør. Lidt dyrere end at købe, men til gengæld står firmaet for alt vedligehold, samt udskiftninger/reparationer hvis det bliver nødvendigt. Har en bekendt der lige har betalt 7000 for nyt print. For os er servicen i højsædet så vi har varme. Har haft det kørende i små 2 mdr nu, uden problemer, men med meget bedre indeklima.”</p>
+          </blockquote>
+          <figcaption class="mt-6 flex items-center gap-x-4">
+            <div class="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-emerald-100 rounded-full">
+                <span class="font-medium text-emerald-600">SØ</span>
+            </div>
+            <div>
+              <div class="font-semibold">Søren</div>
+              <div class="text-gray-600">3. februar 2023</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- More testimonials... -->
+      </div>
+    </div>
+  </div>
+</div>

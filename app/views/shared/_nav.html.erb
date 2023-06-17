@@ -27,7 +27,7 @@
                     <!-- Button -->
                     <button
                         @click="open = !open"
-                        class="flex items-center gap-2 text-base font-medium text-gray-500 hover:text-gray-900"
+                        class="flex items-center gap-2 text-base font-medium text-gray-700 hover:text-gray-900"
                     >
                         Luft til vand-varmepumper
 
@@ -62,7 +62,7 @@
                     <!-- Button -->
                     <button
                         @click="open = !open"
-                        class="flex items-center gap-2 text-base font-medium text-gray-500 hover:text-gray-900"
+                        class="flex items-center gap-2 text-base font-medium text-gray-700 hover:text-gray-900"
                     >
                         Luft til luft-varmepumper
 
@@ -92,10 +92,11 @@
                     </div>
                 </div>
             </div>
+            <%= link_to "Om os",
+                        about_path,
+                        class: "text-base font-medium text-gray-700 hover:text-gray-900" %>
+
 <!--             <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
-              Værd at vide
-            </a>
-            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
               Kontakt
             </a> -->
           </nav>
@@ -127,7 +128,7 @@
                 </div>
               </div>
               <div class="mt-6">
-                <nav class="grid gap-6">
+                <nav class="grid gap-2">
 
                   <div class="flex">
                       <div
@@ -202,6 +203,10 @@
                           </div>
                       </div>
                   </div>
+
+                  <%= link_to "Om os",
+                              about_path,
+                              class: "text-base font-medium text-gray-800 py-2.5 hover:bg-gray-50 rounded-lg" %>
                   
                 </nav>
               </div>

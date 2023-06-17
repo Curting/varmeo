@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   scope controller: :static do
     get :index
+    get :about, path: "om-os"
     get :luft_til_vand, path: "luft-til-vand"
     get :ecodan_silent, path: "luft-til-vand/ecodan-silent"
     get :luft_til_vand_form, path: "luft-til-vand/form"
