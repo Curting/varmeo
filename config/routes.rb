@@ -8,6 +8,8 @@ Rails.application.routes.draw do
     get :luft_til_luft, path: "luft-til-luft"
     get :hero, path: "luft-til-luft/hero"
     get :flagskib, path: "luft-til-luft/flagskib"
+    get :form_redirect_water, path: "luft-til-vand/tak-for-din-forespoergsel"
+    get :form_redirect_air, path: "luft-til-luft/tak-for-din-forespoergsel"
     get :persondatapolitik
     get :cookiedeklaration
   end
